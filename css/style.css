@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: #fff; }
+
+.game {
+  background: #000 url(../img/main-bg.jpg) center no-repeat;
+  background-size: cover;
+  height: 100vh; }
+  .game__box {
+    max-width: 702px;
+    max-height: 643px;
+    background-color: #1c2031;
+    margin: 100px auto;
+    -webkit-box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 23px 57px rgba(0, 0, 0, 0.4); }
+    .game__box-tab-box {
+      height: 115px;
+      background: #2b3040; }
+      .game__box-tab-box-item {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        cursor: pointer;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        margin-top: 31px; }
+        .game__box-tab-box-item:hover {
+          border-bottom: 2px solid #fff; }
+        .game__box-tab-box-item:hover .game__box-tab-box-item-name {
+          color: #fff; }
+        .game__box-tab-box-item-name {
+          display: inline-block;
+          font-style: 16px;
+          text-transform: uppercase;
+          line-height: 28px;
+          color: rgba(183, 186, 205, 0.7); }
+    .game__box-content-title {
+      font-size: 32px;
+      line-height: 20px;
+      margin-top: 70px;
+      margin-left: 9px; }
+    .game__box-content-date {
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: -15px;
+      margin-left: 9px; }
+    .game__box-content-circle {
+      margin-top: 47px; }
+    .game__box-content-discription {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 12px;
+      margin-left: 9px;
+      margin-right: 40px; }
+    .game__box-content-price {
+      font-size: 32px;
+      line-height: 20px;
+      position: relative;
+      margin-top: 58px;
+      margin-left: 9px; }
+      .game__box-content-price::before {
+        content: "20% OFF!";
+        position: absolute;
+        font-size: 12px;
+        line-height: 20px;
+        color: #fedc3f;
+        top: -26px;
+        left: 5px; }
+    .game__box-content-image {
+      margin: 60px 0 26px 47px; }
+    .game__box-content-rating {
+      margin-left: 55px;
+      margin-bottom: 92px; }
+    .game__box-content-tab {
+      display: none; }
+      .game__box-content-tab--active {
+        display: block; }
+    .game__box-content-button-box {
+      width: 164px;
+      height: 55px;
+      line-height: 55px;
+      border-radius: 2px;
+      background-color: #13e28d;
+      text-align: center;
+      margin-top: 35px;
+      margin-left: 17px; }
+      .game__box-content-button-box:hover {
+        background-color: #fff; }
+      .game__box-content-button-box:hover .game__box-content-button-box-button {
+        color: #13e28d; }
+      .game__box-content-button-box-button {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        text-decoration: none; }
+
+/* Layout */
+.ba-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1200px; }
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }
+
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button {
+  display: inline-block; }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  -webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  -o-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+  transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in; }

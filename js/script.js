@@ -14,26 +14,34 @@ $(document).ready(function() {
 
   $(function () {
 
-  $("#rateYo").rateYo({
+  $(".game__box-content-rating").rateYo({
     rating: 4.0,
     starWidth: "20px",
     spacing: "8px"
     });
   });
 
-  // circli rpogres barW
+  // circle prpogres bar
 
-  $("#divProgress").circularloader({
-    backgroundColor: "#1d2031",//background colour of inner circle
-    fontColor: "#fff",//font color of progress text
-    fontSize: "27px",//font size of progress text
-    radius: 43,//radius of circle
-    progressBarBackground: "#aaaaaa",//background colour of circular progress Bar
-    progressBarColor: "#34e885",//colour of circular progress bar
-    progressBarWidth: 3,//progress bar width
-    progressPercent: 78,//progress percentage out of 100
-    progressValue: 78,//diplay this value instead of percentage
-    showText: true,//show progress text or not
-    title: false,//show header title for the progress bar
+
+});
+
+$(window).on('load', function(){
+  $(".game__box-content-circle").each(function(){
+    var rad = $(this).data('radius');
+
+    $(this).circularloader({
+      backgroundColor: "#1d2031",//background colour of inner circle
+      fontColor: "#fff",//font color of progress text
+      fontSize: "27px",//font size of progress text
+      radius: 43,//radius of circle
+      progressBarBackground: "#aaaaaa",//background colour of circular progress Bar
+      progressBarColor: "#34e885",//colour of circular progress bar
+      progressBarWidth: 3,//progress bar width
+      progressPercent: rad,//progress percentage out of 100
+      progressValue: rad,//diplay this value instead of percentage
+      showText: true,//show progress text or not
+      title: false,//show header title for the progress bar
+    });
   });
 });
